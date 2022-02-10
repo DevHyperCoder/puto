@@ -30,11 +30,11 @@ def main():
         # Resize images to fit in new landscape page
 
         page1 = resize_to_new_height(page1,landscape[1])
-        final_page_1.paste(page1,(0,0))
+        final_page_1.paste(page1,(page1.size[0],0))
 
         if page4:
             page4 = resize_to_new_height(page4,landscape[1])
-            final_page_1.paste(page4,(page1.size[0],0))
+            final_page_1.paste(page4,(0,0))
 
         if page2:
             page2 = resize_to_new_height(page2,landscape[1])
